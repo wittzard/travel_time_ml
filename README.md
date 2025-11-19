@@ -1,4 +1,4 @@
-# Food Delivery Time Prediction
+# Food Delivery Time Prediction 🚚
 
 This project is inspired by my work in logistics delivery, where accurately predicting **travel time** is essential to meet customer expectations and **Service Level Agreements (SLA)**.  
 
@@ -83,7 +83,6 @@ pip install -r requirements_dev.txt
 I containerized and deployed the best performing model (**XGBoost**) using **FastAPI** on **Google Cloud** as a public API.  
 Endpoints URL: ```https://mtt-ml-767581861887.asia-southeast1.run.app```
 
----
 #### Predicts **Minimum Travel Time** based on order details.
 
 ```http
@@ -100,8 +99,7 @@ Endpoints URL: ```https://mtt-ml-767581861887.asia-southeast1.run.app```
 | `preparation_time_min` | `float` | greater than 0 |
 | `courier_experience_yrs` | `float` | greater than 0 |
 
-![Example with Postman](test_api.png "ML")
----
+![Test API](test_api.jpg)
 
 #### Check health 
 
