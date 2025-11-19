@@ -21,6 +21,14 @@ The dataset is from [Kaggle: Food Delivery Time Prediction](https://www.kaggle.c
 
 ## Description
 
+For the submission
+- The `notebook.ipynb` (inside the `notebook/` folder) also includes Description about:
+  - **Exploratory Data Analysis (EDA)**
+  - **Model Training Strategy**
+- `script.py` (inside the `script/` folder) allows you to run the model locally and save it as a pickle file.  
+- `app.py` serves as the entry point for the **FastAPI** web service, loading the best model and providing prediction endpoints.  
+- `Dockerfile` is included to build and deploy the entire application as a container.
+
 This project predicts delivery times based on features such as:
 
 - Distance (`distance_km`)
@@ -30,14 +38,6 @@ This project predicts delivery times based on features such as:
 - Traffic level (`traffic_level`)
 - Time of day (`time_of_day`)
 - Vehicle type (`vehicle_type`)
-
-The notebook also includes Description about:
-
-- **Exploratory Data Analysis (EDA)**
-- **Model Training Strategy**
-
-Also, a `script.py` is provided to run the model locally, and a `Dockerfile` is included to build and deploy the application as a container.
-
 
 ### Model Performance
 
